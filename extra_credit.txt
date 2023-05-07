@@ -1,0 +1,20 @@
+Y------------------------------------------------------------------------------------------------------------
+
+We know that the total number of possible K of configuration on a rubiks cube is a finite number 
+{ C1, C2, C3, .... CK }  (u)
+
+Any starting configuration C belongs to that set of configuration
+
+- For any sequence S on C1' we have a finite sequence of possible configuration of length J
+    with the starting position C1' that belongs to {C1', C2', ..., CJ} (s) 
+    and with s a subset of u
+
+- for a sequence S and any configuration Cj in s there is only one configuration C (j-1) % J that leads to Cj
+    with  j != (j-1) % J 
+    and J the maximum nuber of possible configuration
+
+- For a sequence of moves S applied to Cj we get to a next configuration C(j+1) % J on our  finite sequence of configuration s with 1 <= j <= J <= K
+
+So for any starting configuration C, and any sequence of moves S of any length, if S is repeated enough times, you will eventually return to C.
+
+-----------------------------------------------------------------------------------------------------------Y
